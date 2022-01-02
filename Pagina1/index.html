@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog HTML</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .navbar{
+        margin-bottom: 0;
+    }
+
+    .jumbotron{
+        background: #428bca;
+        color: #fff;
+        padding: 20px, 0;
+    }
+
+    .main{
+        margin-top: 20pz;
+        margin-bottom: 20px;        
+    }
+
+    .post{
+        padding-bottom:20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #999;
+    }
+
+    .post .post-title a {
+        color: #333;
+    }
+
+    .post .thumb{
+        margin-right: 10px;
+        width: 40%;
+    }
+
+    .post .thumb img{
+        width: 100%;
+    }
+
+    .post .contenedor-botones{
+        width: 100%;
+    }
+
+    /*--Media Querie--*/
+    @media screen and (max-width: 768px) {
+        .post .thumb{
+            width: 100%;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-static-top" role="navegation">
+            <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+                       <span class="sr-only"> Desplegar / Ocultar Menú</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                   <a href="#" class="navbar-brand">FalconMasters</a>
+               </div> 
+
+               <!--Inicia Menú-->
+               <div class="collapse navbar-collapse" id="navegacion-fm">
+                   <ul class="nav navbar-nav">
+                       <li class="active"><a href="#">Inicio</a></li>
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                               Categorías <span class="caret"></span>
+                           </a>
+                           <ul class="dropdown-menu" role="menu">
+                               <li><a href="#">Categoría #1</a></li>
+                               <li class="divider"></li>
+                               <li><a href="#">Categoría #2</a></li>
+                               <li><a href="#">Categoría #3</a></li>
+                               <li><a href="#">Categoría #4</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="#">Blog</a></li>
+                       <li><a href="#">Contacto</a></li>
+                   </ul>
+
+                   <form action="" class="navbar-form navbar-right" role="search">
+                       <div class="form-group">
+                           <input type="text" class="form-control" placeholder="buscar">
+                       </div>
+                       <button type="submit" class="btn btn-primary">
+                           <span class="glyphicon glyphicon-search"></span>
+                       </button>
+                   </form>
+               </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1>FalconMaters Blog</h1>
+            <p>Blog de diseño web</p>
+        </div>
+    </section>
+    <section class="main container">
+        <div class="row">
+            <section class="posts col-md-9">
+                <div class="miga-de-pan">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Categorías</a></li>
+                        <li class="active">Diseño Web</li>
+                    </ol>
+                </div>
+
+                <article class="post clearfix">
+                    <a href="#" class="thumb pull-left">
+                        <img class="img-thumbnail" src="img/imagen3.jpg" alt="">
+                    </a>
+                    <h2 class="post-title">
+                        <a href="#">Inicia proyectos HTML5 más rápido con Initializr</a>
+                    </h2>
+                    <p><span class="post-fecha">26 de Enero de 2015</span> por <span class="post-autor"><a href="#">José Luyo Sánchez</a></span></p>
+                    <p class="post-contenido text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita, voluptas ut velit mollitia cumque sequi maxime illo numquam dolorum id, voluptatum, iure porro perspiciatis quod totam cupiditate accusamus. Dolor!
+                    </p>
+                    <div class="contenedor-botones">
+                        <a class="btn btn-primary">Leer Más</a>
+                        <a class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                    </div>
+
+
+                </article>
+
+                <article class="post clearfix">
+                    <a href="#" class="thumb pull-left">
+                        <img class="img-thumbnail" src="img/imagen2.jpg" alt="">
+                    </a>
+                    <h2 class="post-title">
+                        <a href="#">Inicia proyectos HTML5 más rápido con Initializr</a>
+                    </h2>
+                    <p><span class="post-fecha">26 de Enero de 2015</span> por <span class="post-autor"><a href="#">José Luyo Sánchez</a></span></p>
+                    <p class="post-contenido text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita, voluptas ut velit mollitia cumque sequi maxime illo numquam dolorum id, voluptatum, iure porro perspiciatis quod totam cupiditate accusamus. Dolor!
+                    </p>
+                    <div class="contenedor-botones">
+                        <a class="btn btn-primary">Leer Más</a>
+                        <a class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                    </div>
+
+
+                </article>
+
+                <article class="post clearfix">
+                    <a href="#" class="thumb pull-left">
+                        <img class="img-thumbnail" src="img/imagen1.jpg" alt="">
+                    </a>
+                    <h2 class="post-title">
+                        <a href="#">Inicia proyectos HTML5 más rápido con Initializr</a>
+                    </h2>
+                    <p><span class="post-fecha">26 de Enero de 2015</span> por <span class="post-autor"><a href="#">José Luyo Sánchez</a></span></p>
+                    <p class="post-contenido text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae expedita, voluptas ut velit mollitia cumque sequi maxime illo numquam dolorum id, voluptatum, iure porro perspiciatis quod totam cupiditate accusamus. Dolor!
+                    </p>
+                    <div class="contenedor-botones">
+                        <a class="btn btn-primary">Leer Más</a>
+                        <a class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                    </div>
+
+
+                </article>
+
+                <nav>
+                    <div class="center-block">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </section>
+
+            <aside class="col-md-3 hidden-xs hidden-sm">
+                <h4>Categorías</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Diseño Web</a>
+                    <a href="#" class="list-group-item">CSS</a>
+                    <a href="#" class="list-group-item">Cursos</a>
+                    <a href="#" class="list-group-item">Desarrollo Web</a>
+                    <a href="#" class="list-group-item">Elementos Web</a>
+                    <a href="#" class="list-group-item">JQuery</a>
+                    <a href="#" class="list-group-item">Recursos y Herramientas</a>
+                </div>
+                <h4>Articulos Recientes</h4>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Inicia Proyectos HTML5 más rápido con Incitializr</h4>
+                    <p class="list-group-item-text">Aprende como iniciar un proyecto HMTL5</p>
+                </a>
+
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Como hacer una plantilla básica con PHP</h4>
+                    <p class="list-group-item-text">Aprende como transformar tu diseño web en una plantilla dinámica con PHP.</p>
+                </a>
+
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Como cambiar el cursos de tu sitio web con propiedad CSS</h4>
+                    <p class="list-group-item-text">Aprende como cambiar el cursor de los elementos de tu sitio web con CSS.</p>
+                </a>
+        
+            </aside>
+        </div>
+    </section>   
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>José Luyo Sánchez</p>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="list-inline text-right">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
